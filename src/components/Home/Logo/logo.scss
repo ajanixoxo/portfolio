@@ -1,0 +1,55 @@
+.logo-container{
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    opacity: 1;
+    img{  
+           
+            position: absolute;
+            bottom: 340px;
+            
+            width: 100%;
+        
+    }
+svg{
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+
+}
+    .solid-logo{
+        position: absolute;
+        top:auto;
+        right:auto;
+        bottom: -127px;
+        left: -8px;
+        margin:auto;
+        width:100%;
+        opacity:0;
+        z-index: 1;
+     
+    }
+    .solid-logo2{
+        position: absolute;
+        top:auto;
+        right:auto;
+        bottom: -150px;
+        left: -60px;
+        margin:auto;
+        width:103%;
+        height: 750px;
+        opacity:0;
+        z-index: -1;
+     
+    }
+    .svg-container{
+        stroke:rgb(118, 225, 10);
+        stroke-width: 10  ;
+       
+    }
+}

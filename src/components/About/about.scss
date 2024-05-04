@@ -1,0 +1,170 @@
+ h1{
+    font-family:sans-serif;
+ }
+ 
+ .img-container {
+   position: absolute;
+   right: 10%;
+   top: 30%;
+   transform: translateX(45%);
+   width: 43.5%;
+   vertical-align: baseline;
+   color: white;
+   display: table-cell ;
+   height: 70%;
+   z-index: -99;
+
+.about-img {
+       display: block;
+       border: 3px solid #fefefe;
+       width: 45%;
+       height: 300px;
+       background-image: url(/assets/img/ade5.png);
+       
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+       border-radius:70% 70% 50% 70%/60% 60% 90% 70%;
+       -webkit-animation: morph 8s ease-in-out infinite;
+        animation: morph 8s ease-in-out infinite;
+   }
+
+}
+
+@keyframes morph {
+   0% {
+      border-radius:70% 70% 50% 70%/60% 60% 90% 70%;
+  }
+  50% {
+      border-radius: 70% 90% 70% 70%/60% 80%  80% 70%;;
+  }
+  100% {
+   border-radius:70% 70% 50% 70%/60% 60% 90% 70%;
+  }
+}
+.logos{
+   display:flex;
+   flex-direction: row;
+   font-size: 15px;
+   width: 150%;
+   margin-bottom: 40px;
+   padding: 0;
+   color: white;
+   ul{
+      list-style-type: none;
+      display: flex;
+      position: absolute;
+   li{
+         
+       img{
+         width: 75%;
+         margin-top: 0px;
+       
+        
+       }
+       .icons{
+         width:150%
+       }
+      }
+   }
+}
+img{
+   width: 100%;
+}
+// #myCanvasContainer {
+//    position: relative;
+//    height: 100%;
+//    width: 100%;
+// }
+// canvas{
+//    position: absolute;
+//    right: 0;
+// }
+@media (max-width: 834px) {
+  .img-container{
+   right: -7%;
+   width: 70%;
+  
+  }
+  .logos{
+  
+   width: 150%;
+ 
+   ul{
+      list-style-type: none;
+      display: flex;
+      position: absolute;
+   li{
+         
+       img{
+         width: 205%;
+         margin-top: 0px;
+       
+        
+       }
+       .icons{
+         width:350%
+       }
+      }
+   }
+}
+}
+@media (max-width: 768px){
+   .logos{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; 
+      padding: 0;
+      position: relative;
+      margin-bottom: 25px;
+      p{
+         width: 105%;
+         margin-left: -10px;
+         margin-bottom: 17px;
+      }
+      ul{
+         list-style-type: none;
+         display: flex;
+         position:absolute;
+         left: -250%;
+         top: 60%;
+
+         
+      li{
+        width: 100%;
+        margin-left: 20px;
+        position: relative;
+          img{
+            width: 70%;
+            margin-top: 0px;
+            margin-left: 10px;
+
+          }
+          .icons{
+            width:150%
+          }
+         }
+      }
+   }
+   .img-container{
+   position: absolute;
+    top: 23%;
+    right: 30%;
+    margin-left: 50%;
+    z-index: -9;
+    width: 100%;
+    opacity: 0.6;
+    .about-img{
+        width: 70%;
+        &:hover{
+         cursor: pointer;
+         z-index:10000;
+       }
+    }
+    &:hover{
+      cursor: pointer;
+      z-index:10000;
+    }
+   }
+}

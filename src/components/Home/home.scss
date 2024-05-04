@@ -1,0 +1,235 @@
+.hero-page {
+
+      background: url("assets/img/bg.png") repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      
+      height: 100vh;
+ 
+      
+    .text-zone {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-20%, -50%);
+        width: 50%;
+        color:rgb(234, 126, 49);
+    }
+
+    h1 {
+        font-family: "Rubik Doodle Shadow";
+        font-size: 4.5em;
+        margin: 0;
+        font-weight: 700;
+      
+      .second{
+        margin: 3px;
+      }
+      span{
+        font-family: monospace;
+        margin-top: 22px;
+        &:hover {
+            color: white;
+        }
+      }
+        &:hover {
+            cursor: pointer;
+
+        }
+        @-webkit-keyframes rubberBand {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                -webkit-transform: scale3d(.95, 1.05, 1);
+                transform: scale3d(.95, 1.05, 1);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, .95, 1);
+                transform: scale3d(1.05, .95, 1);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        &::before {}
+
+        &::after {}
+
+        img{
+            width: 46px;
+            margin-left: -1.5%;
+            position: absolute;
+            top: 76px;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+           
+        }
+    }
+
+    h2 {
+        color: rgb(230, 167, 122);
+        margin-top: 20px;
+        font-weight: 400px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: "Silkscreen";
+        span{
+            font-family: "Silkscreen";
+        }
+         
+    }
+
+    .stack-icons {
+        list-style-type: none;
+        display: flex;
+        position:absolute;
+        left:-47%;
+        top:80%;
+        &:nth-child(4) {
+            color: red;
+        }
+
+        li {
+            margin: auto 10px;
+            font-size: 20px;
+            color: #E44D26;
+            cursor: pointer;
+
+            &:nth-of-type(2) {
+                color:#2965F1;
+            }
+
+            &:nth-of-type(3) {
+                color: #007BFF;
+
+            }
+
+            &:nth-of-type(4) {
+                color:#F0DB4F;
+            }
+
+            &:nth-of-type(5) {
+                color: #68A063
+                ;
+            }
+
+            &:nth-of-type(6) {
+                color: #61DAFB;
+            }
+
+            &:nth-of-type(7) {
+                color: #777BB4
+                ;
+            }
+        }
+    }
+
+    a {
+        color: rgb(247, 181, 134);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: monospace;
+        padding: 7px 15px;
+        border: 1px solid rgb(247, 181, 134);
+        margin-top: 25px;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+        -webkit-animation: rubberBand 1s infinite;
+
+        &:hover {
+            background-color: rgb(247, 181, 134);
+            color: rgb(8, 8, 74);
+           
+
+        }
+
+        @-webkit-keyframes rubberBand {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                -webkit-transform: scale3d(.95, 1.05, 1);
+                transform: scale3d(.95, 1.05, 1);
+            }
+
+            75% {
+                -webkit-transform: scale3d(1.05, .95, 1);
+                transform: scale3d(1.05, .95, 1);
+            }
+
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .hero-page{
+        .text-zone{
+            width: 100%;
+            top: 50%;
+            left: 30%;
+            font-size: 9px;
+
+            h2{
+                font-size: 17px;
+            }
+            .stack-icons{
+                display: inline-flex;
+                left: -100%;
+                z-index: -22;
+              
+            }
+        }
+    }
+}
+@media (max-width: 834px) {
+  .hero-page .stack-icons {
+        
+        left:-100%;
+      
+   
+   }
+}

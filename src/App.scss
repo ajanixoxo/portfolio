@@ -1,0 +1,41 @@
+$primary-color:chocolate;
+
+@import 'animate.css';
+@import '/node_modules/loaders.css/src/animations/ball-scale-multiple.scss';
+
+@font-face {
+  font-family: 'Fira Code Light ';
+  src: url('../public/assets/fonts/feather-icons/fonts/FiraCode-VariableFont_wght.ttf') format('ttf')
+}
+
+@font-face {
+  font-family: 'Kenpixel';
+     src: url('../public/assets/fonts/kenpixel.ttf') format('ttf')
+}
+
+@font-face {
+  font-family: 'Silkscreen-Regular';
+  src: url('../public/assets/fonts/Silkscreen-Regular.ttf') format('ttf')
+}
+@font-face {
+  font-family: 'Rubik Doodle Shadow';
+  src: url('../public/assets/fonts/RubikDoodleShadow-Regular.ttf') format('ttf')
+}
+
+input, textarea{
+    font-family: 'Rubik Doodle Shadow';
+}
+.loader-active{
+  display: block !important;
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 2s 1s;
+  animation-fill-mode: forwards;
+  font-size: 30px;
+}
