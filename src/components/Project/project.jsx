@@ -8,7 +8,8 @@ import { loadFireflyPreset } from '@tsparticles/preset-firefly';
 import Loader from 'react-loaders'
 import project from '/assets/img/project/p1.png'
 import cs from '/assets/img/project/cs.jpg'
-import p2 from 'assests/img/project/p2.png'
+import p2 from '/assets/img/project/p2.png'
+import p3 from '/assets/img/project/p3.png'
 
 function Project() {
   const [init, setInit] = useState(false);
@@ -144,11 +145,11 @@ function Project() {
                   <p>A Clients Portifolio</p>
               </li>
               <li>
-                <a href=''>
-                <img src={cs} alt="Web App Image 2" />
+                <a href='https://furniture-q47n.onrender.com/'>
+                <img src={p3} alt="Web App Image 2" />
 
                 </a>
-                  <p>coming soon...</p>
+                  <p>A Mini Furniture Website</p>
               </li>
               <li>
                 <a href=''>
