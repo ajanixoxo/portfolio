@@ -12,8 +12,8 @@ import Loader from 'react-loaders'
 function Home() {
   const [init, setInit] = useState(false);
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['    ', 'A', ' d', 'e', 'o', 'l', 'u', 'w', 'a']
-  const jobArray = ['A', ' ', 'F', 'u', 'l', 'l', ' ', 'S', 't', 'a', 'c', 'k,', ' ', 'W', 'e', 'b', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+  const nameArray = ['    ', 'A', ' D', 'E', 'O', 'L', 'U', 'W', 'A']
+  const jobArray = ['A', ' ', 'M', 'e', 'r', 'n', ' ', 'S', 't', 'a', 'c', 'k',  ' ' ,  'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
   useEffect(() => {
     setTimeout(() => {
@@ -126,34 +126,34 @@ function Home() {
 
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>Y</span>
-            <span className={`${letterClass} _10 `}>o</span>
-            <span className={`${letterClass} _11`}>o!</span>
-            <span className={`${letterClass} _12`}>&#128526;</span><br />
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _10 `}>e</span>
+            <span className={`${letterClass} _11`}>y!</span>
+            <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m  </span>
-            <span> </span>
-            <span>  </span>
+            
+   
             {/* <img src={a_logo} alt='logo' className='text-animate-hover' /> */}
             <Animate letterClass={letterClass} strArray={nameArray} className="second" idx={15} />
           </h1>
-
           <h2><Animate letterClass={letterClass} strArray={jobArray} idx={23} />
           </h2>
-          <ul className='stack-icons'>
-            <li><FontAwesomeIcon icon={faHtml5} /></li>
-            <li><FontAwesomeIcon icon={faCss3} /></li>
-            <li><FontAwesomeIcon icon={faBootstrap} /></li>
-            <li><FontAwesomeIcon icon={faJs} /></li>
-            <li><FontAwesomeIcon icon={faNodeJs} /></li>
-            <li><FontAwesomeIcon icon={faReact} /></li>
-            <li><FontAwesomeIcon icon={faPhp} /></li>
-
-          </ul>
+        
+          <div className='stack-icons'>
+            <span><FontAwesomeIcon icon={faHtml5} /></span>
+            <span><FontAwesomeIcon icon={faCss3} /></span>
+            <span><FontAwesomeIcon icon={faBootstrap} /></span>
+            <span><FontAwesomeIcon icon={faJs} /></span>
+            <span><FontAwesomeIcon icon={faNodeJs} /></span>
+            <span><FontAwesomeIcon icon={faReact} /></span>
+           
+            <Link to='/contact' className='hero-link'>Reach Me</Link>
+          </div>
          
-          <Link to='/contact' className='hero-link'>Reach Me</Link>
+        
         </div>
-        { <Logo /> }
+        {/* { <Logo /> } */}
         <script src="/assets/js/script.js"></script>
       </div >
       <Loader type="ball-scale-multiple" />

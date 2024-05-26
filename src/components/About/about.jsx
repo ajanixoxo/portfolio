@@ -199,7 +199,7 @@ if(init){
             <p className="text-par">I'm confident in my problem-solving skills and eager to enhance them while collaborating with teams tho I have no experience working with teams  </p>
             <p className="text-par">My Hobbies: I Love Coding, I Love Playing Game(FPS, RGP, Adventure and Fighting), Listening to Music,Having Conversation e.t.c.  </p>
           <p className="logos">
-           <p>Tech Stack I am use too</p> 
+           <p>Tech Stack I use</p> 
         <ul className='stack-icons icons'>
      
         <li><img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,git,bootstrap"  className='icons' alt="skill-icon" /> </li>
@@ -213,15 +213,10 @@ if(init){
         <li className=""><img src="https://skillicons.dev/icons?i=mongod" alt="skill-icon" /></li><br/> */}
     
       </ul>
+      
           </p>
           <p className="logos">
-            <p>
-            Tech Stack I sedomly use
-            </p>
-            
-            <ul className='stack-icons'>
-            <li><img src="https://skillicons.dev/icons?i=tailwind,php,django" alt="skill-icon" /></li>
-          </ul>
+          
           </p>
         </div>
 
