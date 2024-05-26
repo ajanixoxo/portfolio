@@ -153,7 +153,7 @@ function Home() {
          
           <Link to='/contact' className='hero-link'>Reach Me</Link>
         </div>
-        {/* <Logo /> */}
+        { <Logo /> }
         <script src="/assets/js/script.js"></script>
       </div >
       <Loader type="ball-scale-multiple" />

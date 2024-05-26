@@ -190,7 +190,7 @@ if(init){
                 <Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />
             </h1>
             <p className="text-par">
-            Well I am currently open to work for an IT Company  Full Stack Web Developer (MERN) cause, I need make money 💸🤑  
+            Well I am currently open to work for an IT Company  Full Stack Web Developer (MERN) because, I need make sure I futhermore enhace my skils for the real world out there
                  Passionate about building, testing, ,solving
                 challenges and also eating the free foods the IT Company offers, I look forward to contributing to the tech space's
                 progress. Ready to bring my skills in the MERN stack to a dynamic team, I'm excited about

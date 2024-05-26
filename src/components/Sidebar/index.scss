@@ -4,7 +4,7 @@
 }
 
 .nav-bar {
-    background-color: rgb(96, 45, 9);
+    background-color:#0822498e;
     width: 100px;
     height: 100%;
     position: absolute;
@@ -109,6 +109,7 @@
         width: 100%;
         top: -12%;
         margin-top: 100px;
+        color: #c8cacd;
 
         a {
             font-size: 22px;
@@ -190,7 +191,7 @@
                 text-align: center;
                 position: absolute;
                 font-size: 15px;
-                color:#1b0335;
+                color:#dbd6e1;
 
 
             }
@@ -234,6 +235,7 @@
     margin: 0;
     list-style-type: none;
     text-align: center;
+ 
   
     li{
         a{
@@ -247,7 +249,7 @@
             
         }
         &:hover svg{
-           color:#1b0335;
+           color:#f8f7f8;
         }
     }
    }

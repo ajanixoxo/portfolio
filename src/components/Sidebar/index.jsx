@@ -26,24 +26,24 @@ const Sidebar = () => {
     <Link className='logo' to='/'>
 
             <div>
-            <div className='logo-img'></div>
-            <div className='logo-text'><img src={logob} alt='log' /></div>
+            {/* <div className='logo-img'></div>
+            <div className='logo-text'><img src={logob} alt='log' /></div> */}
             </div>
          
 
          </Link>
          <nav>
             <NavLink exact="true" activeclassname="active" to="/">
-               <FontAwesomeIcon icon={faHome} color='#fff' />
+               <FontAwesomeIcon icon={faHome} color='#EAEAEA' />
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/about" className='about_link'>
-               <FontAwesomeIcon icon={faUser} color='#fff' />
+               <FontAwesomeIcon icon={faUser} color='#EAEAEA' />
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/project" className='project_link'>
-               <FontAwesomeIcon icon={faProjectDiagram} color='#fff' />
+               <FontAwesomeIcon icon={faProjectDiagram} color='#EAEAEA' />
             </NavLink>
             <NavLink exact="true" activeclassname="active" to="/contact" className='contact_link'>
-               <FontAwesomeIcon icon={faEnvelope} color='#fff' />
+               <FontAwesomeIcon icon={faEnvelope} color='#EAEAEA' />
             </NavLink>
 
          </nav>

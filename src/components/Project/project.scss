@@ -7,7 +7,7 @@ body, html {
     height: 100%;
     justify-content: space-around;
     align-items: center;
-
+    
 
     .project-container {
         position: absolute;
@@ -15,13 +15,16 @@ body, html {
         flex: 1;
         overflow: auto;
         position:absolute;
-        border: 1px solid chocolate;
+        border: 1px solid #babbbd;
         height: 70%;
         right: 0%;
         margin: 2%;
-        padding: 10px;
+        padding: 20px;
         width: 43%; 
         border-radius: 10px;/* Enable scrolling for the project div */
+        scrollbar-color: rgb(3, 17, 54) rgb(188, 188, 188);
+        scrollbar-width: 10px;
+        
         ul{
             list-style: none;
             padding: 0;
@@ -42,6 +45,7 @@ body, html {
                  a{
                     img{
                         opacity: 0.7;
+                         padding: 10px;
                         transition: 0.5s ease-in-out;
                         &:hover{
                             opacity: 1;
