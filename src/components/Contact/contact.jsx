@@ -5,7 +5,7 @@ import Animate from '../AnimateLetters/animate'
 import emailjs from '@emailjs/browser';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {loadFountainPreset} from '@tsparticles/preset-fountain';
-
+import contact1 from '/assets/img/contact (3).png';
 
 function Contact() {
     const refForm = useRef();
@@ -157,7 +157,9 @@ function Contact() {
 
                          </div>
                 </div>
-
+                <div className='contact_img'>
+                  <img src={contact1} alt="" />
+                </div>
             </div>
             <Loader type='ball-scale-multiple' />
         </>

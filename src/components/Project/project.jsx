@@ -130,7 +130,7 @@ function Project() {
             <ul>
 
               <li>
-               <a href='https://ninasglow-9527c4642be8.herokuapp.com/'>
+               <a href='https://nina-sglowstore.onrender.com/'>
                <img src={project} alt="Web App Image 1" />
                 </a> 
                   <p>A Full Stack E-commerce skincare website built on Node.js, Express, and  Ejs</p>
