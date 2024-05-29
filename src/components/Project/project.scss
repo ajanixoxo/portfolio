@@ -70,22 +70,11 @@ body, html {
             
                 }
                  a{
-                    img{
-                        opacity: 0.7;
-                         padding: 10px;
-                        transition: 0.5s ease-in-out;
-                        height: 120%;
-                        position: absolute;
-                        inset: 0;
-                        width: 120%;
-                        margin: auto;
-                        object-fit: cover;
-                        border-radius: 10px;
-                        &:hover{
-                            opacity: 1;
-                        }
-                
-                    }
+                  color: blue;
+                  position: absolute;
+                  visibility: hidden;
+                  transition:  1s ease-in-out;
+                 
                  }
             }
        
@@ -100,8 +89,16 @@ body, html {
                 filter: grayscale(0);
             }
             .image-block.expanded  .details{
-                visibility:visible;
-                opacity:1;
+                visibility:visible !important;
+                color: rgb(0, 0, 0);
+                  position: absolute;
+                  bottom:0;
+                  text-decoration: none;
+                  text-align: center !important;
+                  padding: 10px;
+                  font-size: 17px;
+                  background-color: white;
+              
               
             }
             p{

@@ -116,6 +116,14 @@ function Project({ isExpanded, onClick }) {
     [],
   );
   if (init) {
+    const projectLinks = [
+      { src: project, link: '#', description: 'A Full Stack E-commerce skincare website built on Node.js, Express, and Ejs' },
+      { src: p2, link: 'https://bukkyola.pxxl.space/', description: 'A Client’s Portfolio' },
+      { src: p3, link: 'https://furniture-q47n.onrender.com/', description: 'A Mini Furniture Website' },
+      { src: cs, link: '#', description: 'Coming soon...' },
+      { src: cs, link: '#', description: 'Coming soon...' },
+      { src: cs, link: '#', description: 'Coming soon...' },
+    ];
     return (
       <>
         <Particles
@@ -135,19 +143,16 @@ function Project({ isExpanded, onClick }) {
           <div className='project-container'>
             <ul className="accordion">
 
-            {[project, p2, p3, cs, cs, cs].map((imgSrc, index) => (
+            {projectLinks.map((project, index) => (
               <li
                 key={index}
                 className={`image-block ${expandedIndex === index ? 'expanded' : ''}`}
                 onClick={() => handleImageBlockClick(index)}
-              >
-                <img src={imgSrc} alt={`Web App Image ${index + 1}`} />
-                <p className='details'>
-                  {index === 0 && 'A Full Stack E-commerce skincare website built on Node.js, Express, and Ejs'}
-                  {index === 1 && 'A Client’s Portfolio'}
-                  {index === 2 && 'A Mini Furniture Website'}
-                  {index >= 3 && 'Coming soon...'}
-                </p>
+              >    
+                <img src={project.src} alt={`Web App Image ${index + 1}`} />
+                <a className='details' href={project.link} target="_blank" rel="noopener noreferrer">
+                  {project.description}
+                </a>
               </li>
             ))}
 
