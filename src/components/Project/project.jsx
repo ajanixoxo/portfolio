@@ -11,9 +11,15 @@ import cs from '/assets/img/project/cs.jpg'
 import p2 from '/assets/img/project/p2.png'
 import p3 from '/assets/img/project/p3.png'
 
-function Project() {
+function Project({ isExpanded, onClick }) {
   const [init, setInit] = useState(false);
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const handleImageBlockClick = (index) => {
+    setExpandedIndex(index === expandedIndex ? null : index);
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -127,56 +133,31 @@ function Project() {
             <p></p>
           </div>
           <div className='project-container'>
-            <ul>
+            <ul className="accordion">
 
-              <li>
-               <a href='https://nina-sglowstore.onrender.com/'>
-               <img src={project} alt="Web App Image 1" />
-                </a> 
-                  <p>A Full Stack E-commerce skincare website built on Node.js, Express, and  Ejs</p>
+            {[project, p2, p3, cs, cs, cs].map((imgSrc, index) => (
+              <li
+                key={index}
+                className={`image-block ${expandedIndex === index ? 'expanded' : ''}`}
+                onClick={() => handleImageBlockClick(index)}
+              >
+                <img src={imgSrc} alt={`Web App Image ${index + 1}`} />
+                <p className='details'>
+                  {index === 0 && 'A Full Stack E-commerce skincare website built on Node.js, Express, and Ejs'}
+                  {index === 1 && 'A Client’s Portfolio'}
+                  {index === 2 && 'A Mini Furniture Website'}
+                  {index >= 3 && 'Coming soon...'}
+                </p>
               </li>
+            ))}
 
-
-              <li>
-                <a href='https://bukkyola.pxxl.space/'>
-                <img src={p2} alt="Web App Image 2" />
-
-                </a>
-                  <p>A Clients Portifolio</p>
-              </li>
-              <li>
-                <a href='https://furniture-q47n.onrender.com/'>
-                <img src={p3} alt="Web App Image 2" />
-
-                </a>
-                  <p>A Mini Furniture Website</p>
-              </li>
-              <li>
-                <a href=''>
-                <img src={cs} alt="Web App Image 2" />
-
-                </a>
-                  <p>coming soon...</p>
-              </li>
-              <li>
-                <a href=''>
-                <img src={cs} alt="Web App Image 2" />
-
-                </a>
-                  <p>coming soon...</p>
-              </li>
-              <li>
-                <a href=''>
-                <img src={cs} alt="Web App Image 2" />
-
-                </a>
-                  <p>coming soon...</p>
-              </li>
             </ul>
 
           </div>
         </div>
         <Loader type='ball-scale-multiple' /></>
+     
+
 
     )
   }

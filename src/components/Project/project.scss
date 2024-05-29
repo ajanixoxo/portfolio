@@ -26,13 +26,16 @@ body, html {
         scrollbar-width: 10px;
         
         ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+             list-style-type: none;
+             padding: 0;
+             margin: auto;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            display: flex;
+            gap: 10px;
+            color: white;
          
-
+           
             li{
                 margin-right: 20px;
                 margin-bottom: 20px;
@@ -41,12 +44,43 @@ body, html {
                 border-radius: 10px;
                 background-color: rgba(2, 25, 59, 0.524);
                 height:250px;
-              
+                align-items: stretch;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                cursor: pointer;
+                height: 300px;
+                width: 100px;
+                filter: grayscale(90%);
+                transition: width 500ms, filter 500ms;
+                img{
+                    opacity: 0.7;
+                     padding: 10px;
+                    transition: 0.5s ease-in-out;
+                    height: 120%;
+                    position: absolute;
+                    inset: 0;
+                    width: 120%;
+                    margin: auto;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    &:hover{
+                        opacity: 1;
+                    }
+            
+                }
                  a{
                     img{
                         opacity: 0.7;
                          padding: 10px;
                         transition: 0.5s ease-in-out;
+                        height: 120%;
+                        position: absolute;
+                        inset: 0;
+                        width: 120%;
+                        margin: auto;
+                        object-fit: cover;
+                        border-radius: 10px;
                         &:hover{
                             opacity: 1;
                         }
@@ -54,10 +88,43 @@ body, html {
                     }
                  }
             }
+       
+            @media (max-width:968px){
+              li{
+                display: block;
+                width: 50%;
+              }
+            }
+            .image-block.expanded{
+                width: 120%;
+                filter: grayscale(0);
+            }
+            .image-block.expanded  .details{
+                visibility:visible;
+                opacity:1;
+              
+            }
             p{
-                margin: 10px;
+                position:absolute;
+                left:0;
+                bottom:0;
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+                width: max-content;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 500ms, visibility 500ms;
             }
         }
+        @media (max-width:968px){
+            ul{
+              display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+            }
+          }
       }
 }
 

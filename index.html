@@ -26,6 +26,26 @@
       emailjs.init("cys9fSB6KTbJqgoz5");
    })();
 </script>
+<script>
+  const imageBlocks = document.querySelectorAll('.image-block');
+  
+  imageBlocks.forEach( (imageBlock)=> {
+      imageBlock.addEventListener('click', () => {
+        console.log("hover")
+         imageBlocks.forEach( (btn)=> 
+          btn.classList.remove(
+              'expanded'
+
+          )
+         
+      )
+      imageBlock.classList.add('expanded');
+        
+        
+      })
+  })
+
+</script>
     <!-- <scrip
       t src="particles.json"></scrip>
     <script  src="/assets/js/script.js"></script> -->

@@ -70,6 +70,19 @@
     margin-left: 0.5px;
     margin-right: 0;
    }
+   .contact_img{
+    display: none;
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  img{
+   display: none;
+  }
+}
 }
 .contact_img{
     width: 50%;
