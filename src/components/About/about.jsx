@@ -202,7 +202,7 @@ if(init){
            <p>Tech Stack I use</p> 
         <ul className='stack-icons icons'>
      
-        <li><img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,git,bootstrap"  className='icons' alt="skill-icon" /> </li>
+        <li><img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,git,bootstrap,tailwind"  className='icons' alt="skill-icon" /> </li>
         {/* <li><img src="https://skillicons.dev/icons?i=css"  alt="skill-icon" /> </li> */}
         {/* <li className=""><img src="https://skillicons.dev/icons?i=js" alt="skill-icon" /></li> */}
         {/* <li className=""><img src="https://skillicons.dev/icons?i=nodejs" alt="skill-icon" /></li>

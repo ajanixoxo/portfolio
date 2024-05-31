@@ -135,10 +135,11 @@ function Project({ isExpanded, onClick }) {
         <div className='container project-page'>
           <div className='text-zone'>
             <h1 className='project-h1' >
-              <Animate letterClass={letterClass} strArray={['A', 'd', 'e', " 's", ' ', 'P', 'r', 'o', ' j', 'e', 'c', 't', 's']} idx={15} />
+              <Animate letterClass={letterClass} strArray={['A', 'd', 'e', " 's", ' ', 'P', 'r', 'o', ' j', 'e', 'c', 't', 's', ' ' , 'a', 'n', 'd', ' ', 'W', 'o', 'r', 'k' , ' ', 'E', 'x' , 'p' , 'e' , 'r' , 'i' , 'e' , 'n', 'c' , 'e' ]} idx={15} />
             </h1>
-            <p className='text-par'>Here are some few projects I have develop so far.Let me know if you have any questions or suggestions😊.You can check Github for the repo </p>
-            <p></p>
+            <p className='text-par'>Here are some few projects and I have develop so far.Let me know if you have any questions or suggestions😊.You can check Github for the repo </p>
+            {/* <p>I have not had a real work expreience before. The e-commerce website and the rest were freelancing and their respective  client could not afford to them or so i decided to showcase them <br/> as a project i have developed  </p> */}
+          
           </div>
           <div className='project-container'>
             <ul className="accordion">

@@ -8,22 +8,39 @@ body, html {
     justify-content: space-around;
     align-items: center;
     
+// .text-zone h1{
+//     font-size: 58px;
+// }
 
+    
+@media(max-width:986px) {
+    .text-zone h1{
+        font-size: 26px;
+        width: 100%;
+        margin-left: -40px;
+    }
+    
+}
+@media(min-width:986px) {
+    .text-zone h1{
+     font-size: 57px;
+ }
+}
     .project-container {
         position: absolute;
         color: white;
-        flex: 1;
+      
         overflow: auto;
-        position:absolute;
-        border: 1px solid #babbbd;
         height: 70%;
-        right: 0%;
+        right: 1%;
         margin: 2%;
         padding: 20px;
         width: 43%; 
         border-radius: 10px;/* Enable scrolling for the project div */
-        scrollbar-color: rgb(3, 17, 54) rgb(188, 188, 188);
-        scrollbar-width: 10px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
         ul{
              list-style-type: none;
@@ -34,6 +51,7 @@ body, html {
             display: flex;
             gap: 10px;
             color: white;
+            
          
            
             li{
@@ -41,12 +59,12 @@ body, html {
                 margin-bottom: 20px;
                 margin-top: 10px;
                 border: 1px solid transparent;
-                border-radius: 10px;
+          
                 background-color: rgba(2, 25, 59, 0.524);
                 height:250px;
                 align-items: stretch;
                 position: relative;
-                border-radius: 10px;
+            
                 overflow: hidden;
                 cursor: pointer;
                 height: 300px;
@@ -63,7 +81,7 @@ body, html {
                     width: 120%;
                     margin: auto;
                     object-fit: cover;
-                    border-radius: 10px;
+                 
                     &:hover{
                         opacity: 1;
                     }
@@ -79,9 +97,13 @@ body, html {
             }
        
             @media (max-width:968px){
+                .project-container{
+                     display: grid;
+                }
               li{
                 display: block;
                 width: 50%;
+                border:none;
               }
             }
             .image-block.expanded{
@@ -123,6 +145,8 @@ body, html {
             }
           }
       }
+
+     
 }
 
 @media (max-width:834px){
@@ -142,6 +166,9 @@ body, html {
         .project-container{
             width: 90%;
             top:30%;
+            display: flex;
+            justify-content: start;
+            align-items:start;
         }
     }
 }
@@ -154,12 +181,27 @@ body, html {
         left: 0;
         .text-zone{
             top: 20%;
+            text-align: left;
         }
 
         .project-container{
             width: 90%;
-            top:30%;
-            left: 20px;
+            top:35%;
+            left: 10px;
+            display: flex;
+            justify-content: start;
+            align-items:start;
+            padding: 20px;
+            ul{
+                width: 100%;
+            }
         }
     }
 }
+
+.project-container::--webkit-scrollbar--thumb{
+    width: 1px;
+    background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
