@@ -190,9 +190,10 @@ if(init){
                 <Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />
             </h1>
             <p className="text-par">
-            Well I am currently open to work for an IT Company  Full Stack Web Developer (MERN) because, I need make sure I futhermore enhace my skils for the real world out there
+            Dive into my portfolio to explore the projects I've built using MongoDB, Express.js, React, and Node.js. Whether you're here to learn more about my work, collaborate on a project, or just explore, I'm thrilled to have you here. Let's build something amazing together!
+       I am currently open to work for an IT Company  Full Stack Web Developer (MERN) because, I need make sure I futhermore enhace my skils for the real world out there
                  Passionate about building, testing, ,solving
-                challenges and also eating the free foods the IT Company offers, I look forward to contributing to the tech space's
+                challenges and also eating the free foods the Company offers, I look forward to contributing to the tech space's
                 progress. Ready to bring my skills in the MERN stack to a dynamic team, I'm excited about
                 the opportunity to make a positive impact and thrive in a fast-paced IT environment and To Improve Technological Advancement in Nigeria and Africa
             </p>

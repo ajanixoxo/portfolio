@@ -13,14 +13,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      flex-direction: row;
  
       
     .text-zone {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-20%, -50%);
+        transform: translate(-60%, -50%);
         width: 50%;
         color:#B0B0B0;
     }
@@ -226,12 +226,21 @@
 
    
 }
+.hero-img{
+    width: 30%;
+    position: absolute;
+    right: 5%;
+    top: 30%; 
+    transform: translate(10%, -10%);
+}
 @media (max-width: 768px) {
     .hero-page{
         .text-zone{
             width: 100%;
+            position: absolute;
             top: 50%;
-            left: 30%;
+            left: 58%;
+            transform: translate(-50%, -50%);
             font-size: 9px;
 
             h2{
@@ -242,6 +251,9 @@
             
               
             }
+        }
+        .hero-img{
+            display: none;
         }
     }
 }

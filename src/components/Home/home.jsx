@@ -6,6 +6,8 @@ import { faBootstrap, faCss3, faHtml5, faJs, faNodeJs, faPhp, faReact } from '@f
 import Animate from '../AnimateLetters/animate.jsx'
 import a_logo from '/assets/img/a_logo.png'
 import Logo from './Logo/logo.jsx'
+import Lottie from "lottie-react";
+import hero_img from '/assets/img/hero-img (2).png'
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import Loader from 'react-loaders'
@@ -137,16 +139,19 @@ function Home() {
             {/* <img src={a_logo} alt='logo' className='text-animate-hover' /> */}
             <Animate letterClass={letterClass} strArray={nameArray} className="second" idx={15} />
           </h1>
+
           <h2><Animate letterClass={letterClass} strArray={jobArray} idx={23} />
+
+          <p>with a love for creating dynamic and responsive web applications. </p>
+
           </h2>
-        
           <div className='stack-icons'>
-            <span><FontAwesomeIcon icon={faHtml5} /></span>
+            {/* <span><FontAwesomeIcon icon={faHtml5} /></span>
             <span><FontAwesomeIcon icon={faCss3} /></span>
             <span><FontAwesomeIcon icon={faBootstrap} /></span>
             <span><FontAwesomeIcon icon={faJs} /></span>
             <span><FontAwesomeIcon icon={faNodeJs} /></span>
-            <span><FontAwesomeIcon icon={faReact} /></span>
+            <span><FontAwesomeIcon icon={faReact} /></span> */}
            
             <Link to='/contact' className='hero-link'>Reach Me</Link>
           </div>
@@ -154,6 +159,7 @@ function Home() {
         
         </div>
         {/* { <Logo /> } */}
+      <img className='hero-img' src={hero_img}  />
         <script src="/assets/js/script.js"></script>
       </div >
       <Loader type="ball-scale-multiple" />
