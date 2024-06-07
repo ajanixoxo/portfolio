@@ -142,7 +142,7 @@ function Home() {
 
           <h2><Animate letterClass={letterClass} strArray={jobArray} idx={23} />
 
-          <p>with a love for creating dynamic and responsive web applications. </p>
+          <p className='hero-info'>with a love for creating dynamic and responsive web applications. </p>
 
           </h2>
           <div className='stack-icons'>
@@ -155,7 +155,7 @@ function Home() {
            
             <Link to='/contact' className='hero-link'>Reach Me</Link>
           </div>
-         
+          {/* Dive into my portfolio to explore the projects I've built using MongoDB, Express.js, React, and Node.js. Whether you're here to learn more about my work, collaborate on a project, or just explore, I'm thrilled to have you here. Let's build something amazing together! */}
         
         </div>
         {/* { <Logo /> } */}

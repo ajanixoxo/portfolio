@@ -110,75 +110,7 @@ if(init){
   return (
     <>
      <div className='container about-page'>
-      {/* <div id="myCanvasContainer">
      
-        <canvas width="500" height="500" id="myCanvas"><ul>   JL;KSJDKLjskldj;LKDSJ;LKdslk
-            <li>
-              <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML 5</a>
-            </li>
-            <li>
-              <a data-weight="25" href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS3</a>
-            </li>
-            <li>
-              <a data-weight="25" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
-            </li>
-            <li>
-              <a data-weight="25" href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">TypeScript</a>
-            </li>
-            <li>
-              <a data-weight="24" href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">REST</a>
-            </li>
-            <li>
-              <a data-weight="14" href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a>
-            </li>
-            <li>
-              <a data-weight="13" href="https://en.wikipedia.org/wiki/XML" target="_blank">React</a>
-            </li>
-            <li>
-              <a data-weight="27" href="https://en.wikipedia.org/wiki/AngularJS" target="_blank">Angular 2+</a>
-            </li>
-            <li>
-              <a data-weight="26" href="https://en.wikipedia.org/wiki/WordPress" target="_blank">JavaScript</a>
-            </li>
-            <li>
-              <a data-weight="21" href="https://en.wikipedia.org/wiki/Node.js" target="_blank">Jasmine</a>
-            </li>
-            <li>
-              <a data-weight="17" href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a>
-            </li>
-            <li><a data-weight="17" href="" target="_blank">_lodash</a></li>
-            <li>
-              <a data-weight="23" href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a>
-            </li>
-            <li>
-              <a data-weight="15" href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)" target="_blank">SASS</a>
-            </li>
-            <li>
-              <a data-weight="20" href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">RxJs</a>
-            </li>
-            <li>
-              <a data-weight="19" href="https://en.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a>
-            </li>
-            <li>
-              <a data-weight="19" href="http://mongoosejs.com/" target="_blank">Webpack</a>
-            </li>
-            <li>
-              <a data-weight="19" href="https://karma-runner.github.io/1.0/index.html" target="_blank">Karma</a>
-            </li>
-            <li>
-              <a data-weight="19" href="http://gulpjs.com/" target="_blank">Gulp</a>
-            </li>
-            <li>
-              <a data-weight="19" href="https://www.npmjs.com/" target="_blank">npm</a>
-            </li>
-            <li>
-              <a data-weight="19" href="https://bower.io/" target="_blank">Bower</a>
-            </li>
-            <li>
-              <a data-weight="19" href="https://en.wikipedia.org/wiki/BEM" target="_blank">BEM</a>
-            </li>
-          </ul></canvas>
-      </div> */}
        <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
@@ -190,35 +122,18 @@ if(init){
                 <Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />
             </h1>
             <p className="text-par">
-            Dive into my portfolio to explore the projects I've built using MongoDB, Express.js, React, and Node.js. Whether you're here to learn more about my work, collaborate on a project, or just explore, I'm thrilled to have you here. Let's build something amazing together!
-       I am currently open to work for an IT Company  Full Stack Web Developer (MERN) because, I need make sure I futhermore enhace my skils for the real world out there
-                 Passionate about building, testing, ,solving
-                challenges and also eating the free foods the Company offers, I look forward to contributing to the tech space's
-                progress. Ready to bring my skills in the MERN stack to a dynamic team, I'm excited about
-                the opportunity to make a positive impact and thrive in a fast-paced IT environment and To Improve Technological Advancement in Nigeria and Africa
+            I am currently open to work as a Full Stack Web Developer (MERN) in an IT company to enhance my skills and gain real-world experience. Passionate about building, testing, and solving challenges, I look forward to contributing to the tech space. I'm eager to bring my MERN stack skills to a dynamic team, make a positive impact,
+             and thrive in a fast-paced IT environment, aiming to improve technological advancement in Nigeria and Africa. Though I have no team experience, I am confident in my problem-solving skills and eager to collaborate.
             </p>
-            <p className="text-par">I'm confident in my problem-solving skills and eager to enhance them while collaborating with teams tho I have no experience working with teams  </p>
-            <p className="text-par">My Hobbies: I Love Coding, I Love Playing Game(FPS, RGP, Adventure and Fighting), Listening to Music,Having Conversation e.t.c.  </p>
-          <p className="logos">
-           <p>Tech Stack I use</p> 
-        <ul className='stack-icons icons'>
-     
-        <li><img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,git,bootstrap,tailwind"  className='icons' alt="skill-icon" /> </li>
-        {/* <li><img src="https://skillicons.dev/icons?i=css"  alt="skill-icon" /> </li> */}
-        {/* <li className=""><img src="https://skillicons.dev/icons?i=js" alt="skill-icon" /></li> */}
-        {/* <li className=""><img src="https://skillicons.dev/icons?i=nodejs" alt="skill-icon" /></li>
-        <li className=""><img src="https://skillicons.dev/icons?i=express" alt="skill-icon" /></li>
-        <li className=""><img src="https://skillicons.dev/icons?i=react" alt="skill-icon" /></li>
-        <li className=""><img src="https://skillicons.dev/icons?i=git" alt="skill-icon" /></li>
-        <li className=""><img src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon" /></li>
-        <li className=""><img src="https://skillicons.dev/icons?i=mongod" alt="skill-icon" /></li><br/> */}
-    
-      </ul>
-      
-          </p>
-          <p className="logos">
+            {/* <p className="text-par">My Hobbies: I Love Coding, I Love Playing Game(FPS, RGP, Adventure and Fighting), Listening to Music,Having Conversation e.t.c.  </p> */}
           
-          </p>
+       
+     
+        <img  src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,git,bootstrap,tailwind,typescript"  className='icons' alt="skill-icon" />
+       
+    
+     
+      
         </div>
 
         <div className='img-container'>

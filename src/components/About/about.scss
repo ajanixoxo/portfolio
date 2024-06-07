@@ -42,32 +42,9 @@
    border-radius:70% 70% 50% 70%/60% 60% 90% 70%;
   }
 }
-.logos{
-   display:flex;
-   flex-direction: row;
-   font-size: 15px;
-   width: 150%;
-   margin-bottom: 40px;
-   padding: 0;
-   color: white;
-   ul{
-      list-style-type: none;
-      display: flex;
-      position: absolute;
-   li{
-         
-       img{
-         width: 75%;
-         margin-top: 0px;
-       
-        
-       }
-       .icons{
-         width:150%
-       }
-      }
-   }
-}
+
+
+
 img{
    width: 100%;
 }
@@ -86,69 +63,20 @@ img{
    width: 70%;
   
   }
-  .logos{
-  
-   width: 150%;
  
-   ul{
-      list-style-type: none;
-      display: flex;
-      position: absolute;
-   li{
-         
-       img{
-         width: 205%;
-         margin-top: 0px;
-       
-        
-       }
-       .icons{
-         width:350%
-       }
-      }
-   }
-}
 }
 @media (max-width: 768px){
-   .logos{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%; 
-      padding: 0;
-      position: relative;
-      margin-bottom: 25px;
-      p{
-         width: 105%;
-         margin-left: -10px;
-         margin-bottom: 17px;
-      }
-      ul{
-         list-style-type: none;
-         display: flex;
-         position:absolute;
-         left: -250%;
-         top: 60%;
-
-         
-      li{
-        width: 100%;
-        margin-left: 20px;
-        position: relative;
+  
           img{
-            width: 70%;
-            margin-top: 0px;
-            margin-left: 10px;
+            width: 100%;
+            
+         
 
           }
-          .icons{
-            width:150%
-          }
-         }
-      }
-   }
+        
+   
    .img-container{
-   position: absolute;
+   position: relative;
     top: 23%;
     right: 30%;
     margin-left: 50%;
