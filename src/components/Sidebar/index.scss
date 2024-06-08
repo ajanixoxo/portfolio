@@ -4,7 +4,8 @@
 }
 
 .nav-bar {
-    background-color:#0822498e;
+     background-color:#0822498e;
+   
     width: 100px;
     height: 100%;
     position: absolute;
@@ -296,6 +297,8 @@
     }
     .mobile {
     display:contents;
+    position: absolute;
+    bottom: -10%;
     nav{
       
        width: 600px;
@@ -404,7 +407,7 @@
             height: 16px;
             width: 32px;
             position: absolute;
-            top: -20px;
+            top: -30px;
             left: 10px;
             z-index: 1299;
             display: flex;
