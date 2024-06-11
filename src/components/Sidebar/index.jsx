@@ -14,6 +14,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Sidebar = () => {
+
+   const onButtonClick = () => {
+      const pdfUrl = "cv.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "document.pdf"; // specify the filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  };
    return (
       <>
         <div className='nav-bar navbar'>
@@ -26,8 +36,7 @@ const Sidebar = () => {
     <Link className='logo' to='/'>
 
             <div>
-            {/* <div className='logo-img'></div>
-            <div className='logo-text'><img src={logob} alt='log' /></div> */}
+        <button className='resume-btn' onClick={onButtonClick}> Resume</button>
             </div>
          
 

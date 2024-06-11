@@ -1,19 +1,31 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './home.scss'
-import { useEffect, useState, useMemo, } from 'react'
+import { useEffect, useState, useMemo, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { faBootstrap, faCss3, faHtml5, faJs, faNodeJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
+// import { faBootstrap, faCss3, faHtml5, faJs, faNodeJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
 import Animate from '../AnimateLetters/animate.jsx'
-import a_logo from '/assets/img/a_logo.png'
-import Logo from './Logo/logo.jsx'
-import Lottie from "lottie-react";
-import hero_img from '/assets/img/hero-img (2).png'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { motion } from "framer-motion"
 import { loadSlim } from "@tsparticles/slim";
 import Loader from 'react-loaders'
+import { gsap } from "gsap";
+import { useGSAP } from '@gsap/react';
+gsap.registerPlugin(useGSAP);
+// import { CustomEase } from "gsap/CustomrEase";
+// import { RoughEase, ExpoScaleEase, SlowMo } from "gsap/EasePack";  
+// import { Flip } from "gsap/Flip";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { Observer } from "gsap/Observer";
+// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+// import { Draggable } from "gsap/Draggable";
+// import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+// import { EaselPlugin } from "gsap/EaselPlugin";
+// import { PixiPlugin } from "gsap/PixiPlugin";
+// import { TextPlugin } from "gsap/TextPlugin";
+// gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin,RoughEase,ExpoScaleEase,SlowMo,CustomEase);
 function Home() {
   const [init, setInit] = useState(false);
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,9 +33,7 @@ function Home() {
   const jobArray = ['A', ' ', 'M', 'E', 'R', 'N', ' ', 'S', 't', 'a', 'c', 'k',  ' ' ,  'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
+   
   }, [])
 
   useEffect(() => {
@@ -115,9 +125,22 @@ function Home() {
     [],
   );
   useEffect(() => {
+     setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 2000)
     AOS.init();
     AOS.refresh();
+    
   }, []);
+  const container = useRef()
+
+  useGSAP(
+    () => {
+        // gsap code here...
+        gsap.to('.box', { rotation: 180 }); // <-- automatically reverted
+    },
+    { scope: container }
+); // <-- scope for selector text (optional)
 
   if (init) {
     return (
@@ -130,7 +153,9 @@ function Home() {
 
         />
 
-
+<div ref={container} className="app">
+            <div className="box">Hello</div>
+        </div>
 
         <div className="text-zone">
           <h1>
@@ -140,19 +165,21 @@ function Home() {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}> 'm  </span>
+            {/* <h1 className={`${letterClass} _15`}> A  </h1> */}
             
    
             {/* <img src={a_logo} alt='logo' className='text-animate-hover' /> */}
             <Animate 
-             strArray={nameArray} className={`${letterClass} _15 second`}  idx={15} 
+             strArray={nameArray} className={`${letterClass}`}  idx={15} 
             
             />
           </h1>
 
-          <h2  data-aos="zoom-in">
+          <h2  >
             <Animate  strArray={jobArray} idx={23} />
 
           <p className='hero-info' 
+          data-aos="fade-up"
           >with a love for creating dynamic and responsive web applications. </p>
 
           </h2>
@@ -162,6 +189,7 @@ function Home() {
           </div>
          
         </div>
+      
        
 
         <script src="/assets/js/script.js"></script>

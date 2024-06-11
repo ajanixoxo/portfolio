@@ -513,4 +513,20 @@
  
   
   }
-  
+  .resume-btn{
+    border: 1px solid #aa70e9;
+    margin: 5px;
+    background-color: transparent;
+    color:#aa70e9;
+    transition: 0.5s ease-in-out;
+    font-weight: 500;
+    width: 70px;
+    font-size: 13px;
+    margin-left: 10px;
+    padding: 10px;
+
+    &:hover{
+        background-color: #aa70e9;
+        color: white;
+    }
+  }
