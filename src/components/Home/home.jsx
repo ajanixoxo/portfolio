@@ -153,9 +153,7 @@ function Home() {
 
         />
 
-<div ref={container} className="app">
-            <div className="box">Hello</div>
-        </div>
+
 
         <div className="text-zone">
           <h1>
@@ -184,6 +182,9 @@ function Home() {
 
           </h2>
           <div className='stack-icons'>
+          <div ref={container} className="app">
+            {/* <div className="box">Hello</div> */}
+        </div>
         
             <Link to='/contact' className='hero-link'>Reach Me</Link>
           </div>
