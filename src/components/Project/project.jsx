@@ -117,7 +117,7 @@ function Project({ isExpanded, onClick }) {
   );
   if (init) {
     const projectLinks = [
-      { src: project, link: '#', description: 'A Full Stack E-commerce skincare website built on Node.js, Express, and Ejs' },
+      { src: project, link: 'https://nina-sglowstore.onrender.com/', description: 'A Full Stack E-commerce skincare website built on Node.js, Express, and Ejs' },
       { src: p2, link: 'https://bukkyola.pxxl.space/', description: 'A Client’s Portfolio' },
       { src: p3, link: 'https://furniture-q47n.onrender.com/', description: 'A Mini Furniture Website' },
       { src: cs, link: '#', description: 'Coming soon...' },
