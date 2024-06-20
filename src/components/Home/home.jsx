@@ -125,13 +125,13 @@ function Home() {
     [],
   );
   useEffect(() => {
-     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
-    AOS.init();
-    AOS.refresh();
-    
-  }, []);
+    console.log('Letter class before timeout:', letterClass);
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+      console.log('Letter class after timeout:', letterClass);
+    }, 2000);
+  }, [letterClass]);
+  
   const container = useRef()
 
   useGSAP(
@@ -168,16 +168,14 @@ function Home() {
    
             {/* <img src={a_logo} alt='logo' className='text-animate-hover' /> */}
             <Animate 
-             strArray={nameArray} className={`${letterClass}`}  idx={15} 
-            
-            />
+             strArray={nameArray} className={letterClass}  idx={15}    />
           </h1>
 
           <h2  >
-            <Animate  strArray={jobArray} idx={23} />
+            <Animate strArray={jobArray}  idx={23} />
 
           <p className='hero-info' 
-          data-aos="fade-up"
+         
           >with a love for creating dynamic and responsive web applications. </p>
 
           </h2>
