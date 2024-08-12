@@ -129,7 +129,7 @@ function Home() {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
       console.log('Letter class after timeout:', letterClass);
-    }, 2000);
+    }, 1000);
   }, [letterClass]);
   
   const container = useRef()
