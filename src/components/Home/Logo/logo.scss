@@ -47,19 +47,43 @@
        
 //     }
 // }
-.solid-logo{
+// .solid-logo{
    
-      opacity:0;
-            z-index: 1;
+//       opacity:0;
+//             z-index: 1;
          
-     }
+//      }
 
-.svg-container{
-    stroke-width:10px;
-    stroke:#0CB6B3;
+// .svg-container{
+//     stroke-width:10px;
+//     stroke:#0CB6B3;
 
+// }
+
+//  .logo-container{
+//     opacity: 0;
+//  }
+#svg-path {
+    stroke-width: 10;
+    stroke-dashoffset: 10;
+    animation: dash 5s linear alternate ;
+  
 }
 
- .logo-container{
-    opacity: 0;
- }
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+   
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 10;
+    }
+
+    to {
+        stroke-dashoffset: 882;
+        stroke:#0CB6B3;;
+    }
+}
