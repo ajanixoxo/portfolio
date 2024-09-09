@@ -128,7 +128,7 @@ function Home() {
             options={options}
 
           />
-          <div className="text-zone text-white flex flex-col justify-center md:justify-start items-start md mx-0 md:mx-14 z-20 md:px-10">
+          <div className="text-zone text-white flex flex-col justify-center md:justify-start items-start md mx-6 md:mx-14 z-20 md:px-10">
             <div>
               <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5>
 
