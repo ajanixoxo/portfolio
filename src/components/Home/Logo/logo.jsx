@@ -7,7 +7,7 @@ import A1 from '/assets/img/Areal.png';
 
 import gsap from 'gsap-trial';
 import { useEffect, useRef, useState } from 'react';
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin';
+
 import anime from 'animejs/lib/anime.es.js';
 
 const Logo = () => {
