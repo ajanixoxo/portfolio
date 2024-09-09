@@ -2,49 +2,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './home.scss'
 import { useEffect, useState, useMemo, useRef } from 'react'
 import { Link } from 'react-router-dom'
-// import { faBootstrap, faCss3, faHtml5, faJs, faNodeJs, faPhp, faReact } from '@fortawesome/free-brands-svg-icons'
+import Logo from './Logo/logo.jsx'
 import Animate from '../AnimateLetters/animate.jsx'
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import A from '/assets/img/A.png';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFountainPreset } from '@tsparticles/preset-fountain';
 import { motion } from "framer-motion"
 import { loadSlim } from "@tsparticles/slim";
 import Loader from 'react-loaders'
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
-// import { CustomEase } from "gsap/CustomrEase";
-// import { RoughEase, ExpoScaleEase, SlowMo } from "gsap/EasePack";  
-// import { Flip } from "gsap/Flip";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { Observer } from "gsap/Observer";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-// import { Draggable } from "gsap/Draggable";
-// import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-// import { EaselPlugin } from "gsap/EaselPlugin";
-// import { PixiPlugin } from "gsap/PixiPlugin";
-// import { TextPlugin } from "gsap/TextPlugin";
-// gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin,RoughEase,ExpoScaleEase,SlowMo,CustomEase);
+
 function Home() {
   const [init, setInit] = useState(false);
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['    ', 'A', 'D', 'E', 'O', 'L', 'U', 'W', 'A']
-  const jobArray = ['A', ' ', 'M', 'E', 'R', 'N', ' ', 'S', 't', 'a', 'c', 'k',  ' ' ,  'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
+  const jobArray = ['A', ' ', 'W', 'E', 'B', ' ', ' ', '&', ' ', 'A', 'p', 'p', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
-  useEffect(() => {
-   
-  }, [])
+
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
-      await loadSlim(engine);
-      //await loadBasic(engine);
+      await loadFountainPreset(engine);
     }).then(() => {
       setInit(true);
     });
@@ -129,73 +111,61 @@ function Home() {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
       console.log('Letter class after timeout:', letterClass);
-    }, 1000);
+    }, 6000);
   }, [letterClass]);
-  
+
   const container = useRef()
 
-  useGSAP(
-    () => {
-        // gsap code here...
-        gsap.to('.box', { rotation: 180 }); // <-- automatically reverted
-    },
-    { scope: container }
-); // <-- scope for selector text (optional)
 
   if (init) {
     return (
-      <>  <div className='container2 hero-page'>
+      <>
+        <div className='container2 hero-page flex justify-center md:justify-start items-center flex-col md:flex-row '>
 
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
+          <Particles
+            id="tsparticles"
+            particlesLoaded={particlesLoaded}
+            options={options}
 
-        />
+          />
+          <div className="text-zone text-white flex flex-col justify-center md:justify-start items-start md mx-0 md:mx-14 z-20 md:px-10">
+            <div>
+              <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5>
 
+            </div>
+            <h1 className="main-text w-max text-[30px] md:text-[40px]">
+              &nbsp;&nbsp;  <span className={`${letterClass} _9`}>H</span>
+              <span className={`${letterClass} _10`}>e</span>
+              <span className={`${letterClass} _11`}>y!</span>
+              <br />
+              &nbsp;&nbsp; <span className={`${letterClass} _13`}>I&apos;</span>
+              <span className={`${letterClass} _14 `}>m</span>
+              <Animate
+                letterClass={`${letterClass} main-text`} strArray={nameArray} idx={15} />
+            </h1>
+            <h2> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+              <Animate strArray={jobArray} letterClass={`${letterClass} text-[20px] md:text-[40px] main-text`} idx={23} /></h2>
+            <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5>
+            <h5 className='tags top-tags py-2' >&lt;p&gt; </h5>
+            <p className='hero-info basic-text text-center font-medium'  > &nbsp;&nbsp;&nbsp;&nbsp;with a love for creating dynamic and responsive Web Applications and Mobile Applications. </p>
+            <h5 className='tags top-tags py-2' >&lt;/p&gt;</h5>
+            <div className='stack-icons w-full flex justify-center md:justify-start ml-0 md:ml-4' >
+              <div ref={container} className="app">
+                {/* <div className="box">Hello</div> */}
+              </div>
 
+              <Link to='/contact' className='hero-link'>Reach Me</Link>
+            </div>
 
-        <div className="text-zone">
-          <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _10 `}>e</span>
-            <span className={`${letterClass} _11`}>y!</span> */}
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}> 'm  </span>
-            {/* <h1 className={`${letterClass} _15`}> A  </h1> */}
-            
-   
-            {/* <img src={a_logo} alt='logo' className='text-animate-hover' /> */}
-            <Animate 
-             strArray={nameArray} className={letterClass}  idx={15}    />
-          </h1>
-
-          <h2  >
-            <Animate strArray={jobArray}  idx={23} />
-
-          <p className='hero-info' 
-         
-          >with a love for creating dynamic and responsive web applications. </p>
-
-          </h2>
-          <div className='stack-icons'>
-          <div ref={container} className="app">
-            {/* <div className="box">Hello</div> */}
-        </div>
-        
-            <Link to='/contact' className='hero-link'>Reach Me</Link>
           </div>
-         
-        </div>
-      
-       
-
-        <script src="/assets/js/script.js"></script>
-      </div >
-      <Loader type="ball-scale-multiple" />
+          <div className="absolute w-[90%] md:w-auto md:right-16">
+            <Logo />
+          </div>
+          <script src="/assets/js/script.js"></script>
+        </div >
+        <Loader type="ball-scale-multiple" />
       </>
-    
+
     )
   }
 }

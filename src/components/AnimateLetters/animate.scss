@@ -4,21 +4,20 @@
     animation:bounceIn 1s 1s;
     animation-fill-mode: forwards;
     min-width: 15px;
-}
-.text-animate-hover{
+    cursor: pointer;
     
-    display: inline-block;
-    animation-fill-mode:both ;
-    margin: 0;
-    
+}.text-animate-hover{
+        min-width: 10px;
+        display: inline-block;
+        animation-fill-mode:both ;
+        cursor: pointer;
 
-    &:hover{
-        color:rgb(220, 229, 237);
-        animation: rubberBand 1s;
-   
+        &:hover{
+            animation: rubberBand 1s;
+            color: #85a4ca;
+        }
     }
-  
-}
+//  
 @-webkit-keyframes rubberBand {
     0% {
         -webkit-transform: scale3d(1, 1, 1);

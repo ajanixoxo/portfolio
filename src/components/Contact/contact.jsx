@@ -120,12 +120,12 @@ function Contact() {
       if(init){
         return (
         <>
-           <Particles
+           {/* <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
 
-        />
+        /> */}
             <div className='container2 contact-page'>
                 <div className='text-zone'>
                     <h1>

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+    background-color: #070B10;
+}
+body{
+    background-color: rgb(3, 3, 33);
+    background: url(assets/img/Frame.png) no-repeat;
+    height: max-content;
+    width: 99vw;
+    background-position: fixed;
+    background-size: cover;
+  
+}

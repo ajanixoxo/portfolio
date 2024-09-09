@@ -1,5 +1,5 @@
 $primary-color:chocolate;
-
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Playwrite+CU:wght@100..400&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import 'animate.css';
 @import '/node_modules/loaders.css/src/animations/ball-scale-multiple.scss';
 
@@ -38,4 +38,22 @@ input, textarea{
   animation: fadeOut 2s 1s;
   animation-fill-mode: forwards;
   font-size: 30px;
+}
+.tags{
+  font-family: "Playwrite CU";  
+    background: -webkit-linear-gradient(45deg, #a9c7eb  30%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.main-text{
+  font-family: "Audiowide";
+
+ 
+}
+.basic-text{
+  font-family: "Source Code Pro" !important;
+  font-size: 15px;
+  color:#ffffff
 }

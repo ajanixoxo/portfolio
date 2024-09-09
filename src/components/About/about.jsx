@@ -111,12 +111,12 @@ if(init){
     <>
      <div className='container about-page'>
      
-       <Particles
+       {/* <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
 
-        />
+        /> */}
         <div className='text-zone'>
             <h1 >
                 <Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />

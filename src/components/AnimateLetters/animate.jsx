@@ -3,7 +3,7 @@ import'./animate.scss'
 
 function Animate({letterClass, strArray, idx}) {
   return (
- <span className="second">
+ <span>
     {
         strArray.map((char, i) => (
         <span key={char + i} className={`${letterClass} _${i + idx}`}>
