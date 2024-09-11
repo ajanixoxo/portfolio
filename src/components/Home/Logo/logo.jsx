@@ -77,7 +77,7 @@ const Logo = () => {
 	return (
 		// ref={bgRef}
 		<div className='logo-container flex justify-center items-center'>
-			<img ref={solidLogoRef} className='solid-logo absolute rotate-12 w-[100%]' src={A1} alt='A' />
+			<img ref={solidLogoRef} className='solid-logo absolute rotate-12 w-[100%] opacity-5 md:bg-opacity-100' src={A1} alt='A' />
 
 			<svg xmlns="http://www.w3.org/2000/svg"
 				version="1.0" width="400.000000pt"

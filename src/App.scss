@@ -57,3 +57,27 @@ input, textarea{
   font-size: 15px;
   color:#ffffff
 }
+#svg-path {
+    stroke-width: 10;
+    stroke-dashoffset: 10;
+    animation: dash 5s linear alternate ;
+  
+}
+
+#path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+   
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 10;
+    }
+
+    to {
+        stroke-dashoffset: 882;
+        stroke:#0CB6B3;;
+    }
+}
