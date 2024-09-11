@@ -127,15 +127,15 @@ function Contact() {
 
         /> */}
             <div className='container2 contact-page'>
-                <div className='text-zone'>
-                    <h1>
+                <div className='text-zone zone text-white flex flex-col justify-center md:justify-start items-start md:w-1/2 mx-6 md:mx-14 z-20 md:px-10"'>
+                    <h1 className='main-text w-max text-[30px] md:text-[40px]'>
                         <Animate letterClass={letterClass} strArray={['R', 'e', 'a', 'c', ' h', ' ', 'A', 'd', ' e']} idx={15} />
                     </h1>
-                    <p className="text-par">I am open to work as a freelancer and to put my skills into real world projects.
+                    <p className="text-par basic-text">I am open to work as a freelancer and to put my skills into real world projects.
                         You can contact me through the provided form below or the social
                          links in the nav bar</p>
                          <div className='contact-form'>
-                            <form ref={refForm} onSubmit={sendEmail}>
+                            <form ref={refForm} onSubmit={sendEmail} className="contact-form">
                                 <ul>
                                     <li className='half'>
                                       

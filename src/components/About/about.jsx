@@ -36,7 +36,7 @@ function About() {
         opacity: 0,
       },
       {
-        opacity: 1,
+        opacity: 0.7,
         delay: 3,
         duration: 3,
       }

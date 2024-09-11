@@ -147,7 +147,7 @@ function Home() {
               <Animate strArray={jobArray} letterClass={`${letterClass} text-[19px]  md:text-[40px] main-text`} idx={23} /></h2>
             <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5>
             <h5 className='tags top-tags py-2' >&lt;p&gt; </h5>
-            <p className='hero-info basic-text text-center font-medium '  > &nbsp;&nbsp;&nbsp;&nbsp;with a love for creating dynamic and responsive Web Applications and Mobile Applications. </p>
+            <p className='hero-info basic-text text-center font-medium '  > &nbsp;&nbsp;&nbsp;&nbsp;with a love for creating dynamic and responsive Web and Mobile Applications. </p>
             <h5 className='tags top-tags py-2' >&lt;/p&gt;</h5>
             <div className='stack-icons w-full flex justify-center md:justify-start ml-0 md:ml-4' >
               <div ref={container} className="app">
