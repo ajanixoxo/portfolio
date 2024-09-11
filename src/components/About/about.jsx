@@ -169,28 +169,40 @@ function About() {
   if (init) {
     return (
       <>
-        <div className='container about-page flex justify-center md:justify-start items-center flex-col md:flex-row'>
+        <div className='container about-page flex justify-center md:justify-start items-center flex-col md:flex-row mx-2'>
 
-          {/* <Particles
+          <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
 
-        /> */}
-          <div className='text-zone text-white flex flex-col justify-center md:justify-start gap-3 items-start md mx-6 md:mx-13 z-20 md:px-10'>
+        />
+          <div className='text-zone text-white flex flex-col justify-center md:justify-start gap-3 items-start  md:mx-13 z-20 md:px-10'>
             <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5> <h1 className="main-text w-max text-[30px] md:text-[40px]" >
               &nbsp;&nbsp;&nbsp;&nbsp;<Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />
             </h1>
             <h5 className='tags top-tags py-2' >&lt;/h1&gt; </h5>
             <h5 className='tags top-tags py-2' >&lt;p&gt; </h5>
-            <p className="basic-text text-left text-base md:w-3/5 ml-10">
+            <p className="basic-text w-[350px] text-sm md:text-base md:w-3/5 md:ml-10">
             I'm a passionate Full Stack Web Developer (MERN) seeking a role in an IT company to enhance my skills, gain experience, and contribute to technological advancement in Nigeria and Africa, despite having no prior team experience.
             In my free time you will find me playing video games, listening to music, sleeping, chatting or watching movies.
             </p>
             <h5 className='tags top-tags py-2' >&lt;/p&gt; </h5>
+            <div className="">
+           <div className="stack frontend mb-2"><span className="text-[20px] font-bold ">Frontend Tools: </span>
+           <p className="text-[12px] md:text-[16px] font-semibold mb-2">HTML,CSS,JavaScript,React,NextJS,Bootstrap,Tailwind and Typescript</p>
+           <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,bootstrap,tailwind,typescript" className='w-[300px] md:w-auto' alt="skill-icon" />
+           </div>
+           <div className="stack backend  mb-2 "><span className="text-[20px] font-bold ">Backend Tools:</span>
+           <p className="text-[12px] md:text-[16px] font-semibold mb-2">NodeJS, ExpressJS, Django,PHP</p>
+           <img src="https://skillicons.dev/icons?i=nodejs,express,django,php" className='w-[200px] md:w-auto' alt="skill-icon" />
+           </div>
+           <div className="stack general-tools"><span className="text-[20px] font-bold ">General Development:</span>
+           <p className="text-[12px] md:text-[16px] font-semibold mb-2  md:w-auto ">Git,Linux,Threejs,Figma,VScode,MongoDB,MySQL,Firebase</p>
+           <img src="https://skillicons.dev/icons?i=git,linux,threejs,figma,vscode,mongodb,mysql,firebase" className='w-[300px] md:w-auto' alt="skill-icon" />
+           </div>
            
-            <p className="text-par">My Stack: <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,react,nextjs,git,bootstrap,tailwind,typescript,linux,threejs,django,php,native" className='w-[500px] md:w-auto' alt="skill-icon" />   </p>
-
+</div>
           </div>
           <div className="absolute w-[90%] md:w-[50%] md:right-14">
             <div className='img-container flex justify-center items-center'>
