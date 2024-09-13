@@ -6,10 +6,10 @@ html{
 }
 body{
     background-color: rgb(3, 3, 33);
-    background: url(assets/img/Frame.png) no-repeat;
+    background: url(assets/img/Frame.png) ;
     height: max-content;
     width: 99vw;
     background-position: fixed;
-    background-size: cover;
+    background-size: contain;
   
 }

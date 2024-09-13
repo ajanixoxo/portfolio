@@ -178,17 +178,18 @@ function About() {
 
         />
           <div className='text-zone text-white flex flex-col justify-center md:justify-start gap-3 items-start  md:mx-13 z-20 md:px-10'>
-            <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5> <h1 className="main-text w-max text-[30px] md:text-[40px]" >
+            <h5 className='tags top-tags py-2' >&lt;h1&gt; </h5> 
+            <h1 className="main-text w-max text-[30px] md:text-[40px]" >
               &nbsp;&nbsp;&nbsp;&nbsp;<Animate letterClass={letterClass} strArray={['K', 'n', 'o', 'w', ' ', ' A', 'b', 'o', ' u', 't', ' ', ' A', 'd', 'e']} idx={15} />
             </h1>
             <h5 className='tags top-tags py-2' >&lt;/h1&gt; </h5>
             <h5 className='tags top-tags py-2' >&lt;p&gt; </h5>
-            <p className="basic-text w-[350px] text-sm md:text-base md:w-3/5 md:ml-10">
+            <p className="basic-text w-[350px]  text-sm md:text-base md:w-3/5 md:ml-10">
             I'm a passionate Full Stack Web Developer (MERN) seeking a role in an IT company to enhance my skills, gain experience, and contribute to technological advancement in Nigeria and Africa, despite having no prior team experience.
             In my free time you will find me playing video games, listening to music, sleeping, chatting or watching movies.
             </p>
             <h5 className='tags top-tags py-2' >&lt;/p&gt; </h5>
-            <div className="">
+            <div className="stacks">
            <div className="stack frontend mb-2"><span className="text-[20px] font-bold ">Frontend Tools: </span>
            <p className="text-[12px] md:text-[16px] font-semibold mb-2">HTML,CSS,JavaScript,React,NextJS,Bootstrap,Tailwind and Typescript</p>
            <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,bootstrap,tailwind,typescript" className='w-[300px] md:w-auto' alt="skill-icon" />
