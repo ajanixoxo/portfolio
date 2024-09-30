@@ -64,26 +64,27 @@
 //     opacity: 0;
 //  }
 #svg-path {
-    stroke-width: 10;
+    stroke-width: 100;
     stroke-dashoffset: 10;
     animation: dash 5s linear alternate ;
   
 }
 
 #path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: dash 5s linear alternate infinite;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 5s forwards;
+    stroke-width:6px;
    
 }
 
 @keyframes dash {
     from {
-        stroke-dashoffset: 10;
+        stroke-dashoffset: 100;
     }
 
     to {
-        stroke-dashoffset: 882;
-        stroke:#0CB6B3;;
+        stroke-dashoffset: 1000;
+        stroke: #07ABAB;
     }
 }

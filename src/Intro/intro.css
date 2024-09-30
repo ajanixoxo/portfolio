@@ -1,0 +1,40 @@
+
+#svg-path {
+    stroke-width: 10;
+    stroke-dashoffset: 10;
+    animation: dash 5s linear alternate ;
+  
+}
+
+.svg{
+    width: 70%;
+    height: 10%;
+}
+@media(max-width:768px){
+    .svg{
+        width: 100%;
+        height: 100px;
+    }
+}
+h5{
+    margin-left: 100px;
+}
+#path {
+    stroke-dasharray:600;
+    stroke-dashoffset: 0;
+    animation: dash 5s forwards;
+   
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1300;
+    }
+
+    to {
+        stroke-dashoffset:0;
+        fill:"white";
+        stroke: #07ABAB;
+      
+    }
+}

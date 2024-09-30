@@ -61,7 +61,7 @@ const Sidebar = () => {
                   </a>
                </li>
                <li>
-                  <a target="_blank" rel="noreferrer" href='https://wa.link/r2kpcb'>
+                  <a target="_blank" rel="noreferrer" href='wa.link/4r99jw'>
                      <FontAwesomeIcon icon={faWhatsapp} color="rgb(3, 3, 33)" />
                   </a>
                </li>
@@ -125,7 +125,7 @@ const Sidebar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink exact="true" activeClassName="active" to="https://wa.link/r2kpcb">
+                <NavLink exact="true" activeClassName="active" to="wa.link/4r99jw">
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </NavLink>
               </li>
