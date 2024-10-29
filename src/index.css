@@ -6,7 +6,7 @@ html{
 }
 body{
     background-color: rgb(3, 3, 33);
-    background: url(assets/img/Frame.png) ;
+    background: url(/assets/img/Frame.png) ;
     height: max-content;
     width: 99vw;
     background-position: fixed;

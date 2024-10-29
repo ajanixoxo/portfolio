@@ -30,7 +30,7 @@ const Sidebar = () => {
   
    return (
       <>
-         <div className='nav-bar navbar rounded bg-[#0bb6b3f9] absolute hidden md:flex  z-10 flex-row left-1/2 transform -translate-x-1/2 gap-14  px-4 py-4 !backdrop-blur-xl w-max' >
+         <div className='nav-bar navbar rounded  bg-[#4bfefbf3] absolute hidden md:flex  z-10 flex-row left-1/2 transform -translate-x-1/2 gap-14  px-4 py-4 !backdrop-blur-xl w-max' >
             <nav className=" flex flex-row gap-14">
                <NavLink exact="true" activeclassname="active" to="/">
                   <FontAwesomeIcon icon={faHome} color='rgb(3, 3, 33)' />
